@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="">
       <Header />
-      <div className="flex mx-auto md:container md:mx-auto">
+      <div className="md:flex">
         <List />
         <Map />
       </div>

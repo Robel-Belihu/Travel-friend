@@ -3,8 +3,8 @@ import React from "react";
 
 function Header() {
   return (
-    <nav className="flex justify-between flex-wrap bg-teal-700 p-2">
-      <div class="flex items-center  text-white mr-6">
+    <nav className="block lg:flex justify-between flex-wrap bg-teal-700 p-2">
+      <div class="flex items-center text-white mr-6">
         <span class="font-semibold text-xl tracking-tight">Travel Friend</span>
       </div>
       <div class=" flex-grow lg:flex md:items-center lg:w-auto">
@@ -12,9 +12,9 @@ function Header() {
 
         <a
           href="#responsive-header"
-          class="block mt-4 mr-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+          class="block md:mt-4 md:mr-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
         >
-          Explore new places
+          Explore new places.
         </a>
         {/* <Autocomplete> */}
         <div className="flex justify-center items-center space-x-2">

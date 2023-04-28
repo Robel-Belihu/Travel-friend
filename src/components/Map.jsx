@@ -1,8 +1,7 @@
 import React from "react";
 import BingMapsReact from "bingmaps-react";
-import { Autocomplete } from "@react-google-maps/api";
 
-function Map() {
+function Map({}) {
   return (
     <div className="w-full h-4/5 m-2">
       <BingMapsReact
@@ -13,11 +12,19 @@ function Map() {
         }}
         width="100%"
         viewOptions={{
-          center: { latitude: 0, longitude: 0 },
+          center: { latitude: 8.9806, longitude: 38.7578 },
           mapTypeId: "grayscale",
         }}
-      />
+        // onClick={(e) => {
+        //   console.log(e);
+        //   setCoordinates({
+        //     // latitude: e.center.latitude,
+        //     // longitude: e.center.longitude,
+        //   });
+        // }}
+      ></BingMapsReact>
     </div>
   );
 }
+
 export default Map;
